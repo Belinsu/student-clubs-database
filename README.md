@@ -12,11 +12,11 @@ Club activity on campus is tracked in scattered spreadsheets and message threads
 
 **Entity–relationship diagram**
 
-![ER diagram](docs/er-diagram.png)
+![ER diagram](er-diagram.png)
 
 **Relational model**
 
-![Relational model](docs/relational-model.png)
+![Relational model](relational-model.png)
 
 The schema has 12 tables: 6 entity tables and 6 tables that resolve many-to-many relationships.
 
@@ -48,11 +48,11 @@ Every relation was checked against its functional dependencies and is in third n
 
 | File | Purpose |
 | --- | --- |
-| [`sql/01_schema.sql`](sql/01_schema.sql) | `CREATE TABLE` statements with primary and foreign keys |
-| [`sql/02_sample_data.sql`](sql/02_sample_data.sql) | 20 sample rows per table |
-| [`sql/03_constraints.sql`](sql/03_constraints.sql) | `CHECK` constraints |
-| [`sql/04_queries.sql`](sql/04_queries.sql) | 10 reporting queries |
-| [`sql/05_stored_procedures.sql`](sql/05_stored_procedures.sql) | 3 stored procedures |
+| [`01_schema.sql`](01_schema.sql) | `CREATE TABLE` statements with primary and foreign keys |
+| [`02_sample_data.sql`](02_sample_data.sql) | 20 sample rows per table |
+| [`03_constraints.sql`](03_constraints.sql) | `CHECK` constraints |
+| [`04_queries.sql`](04_queries.sql) | 10 reporting queries |
+| [`05_stored_procedures.sql`](05_stored_procedures.sql) | 3 stored procedures |
 
 ## Queries
 
@@ -75,7 +75,7 @@ The stored procedures take a parameter and return events by company, students by
 
 ## Running it
 
-The project was developed on **Microsoft SQL Server**. Run the files in `sql/` in numbered order.
+The project was developed on **Microsoft SQL Server**. Run the `.sql` files in numbered order.
 
 Files 01–04 use standard SQL and also run on PostgreSQL. File 05 uses T-SQL syntax (`CREATE OR ALTER PROCEDURE`, `GO`, `EXEC`) and needs SQL Server.
 
